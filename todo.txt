@@ -1,1 +1,4 @@
-
+TODO
+1. Create all headers before implementing cpp files
+2. assign workload
+3. finish project
