@@ -16,7 +16,7 @@ namespace textui
 	class Screen
 	{
 	private:
-		Menu Menu();
+		Menu Menu;
 	public:
 		Screen(string screen_title, vector<char, string> menu_options);
 		void Show();

@@ -3,10 +3,7 @@
 #include "Screen.h"
 using namespace textui;
 
-Menu Screen::Menu()
-{
 
-}
 Screen::Screen(string screen_title, vector<char, string> menu_options)
 {
 

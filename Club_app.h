@@ -14,8 +14,8 @@ namespace club
 	{
 	private:
 		//attributes
-		textui::Screen text_ui();
-		Club_roster club();
+		textui::Screen text_ui;
+		Club_roster club;
 
 		//methods
 		void execute();

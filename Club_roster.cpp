@@ -3,27 +3,8 @@
 using namespace club;
 using namespace std;
 
-string Club_roster::club_name()
-{
 
-}
-string Club_roster::club_description()
-{
-
-}
-vector<Officer> Club_roster::officer_list
-{
-
-}
-vector<Member> Club_roster::member_list
-{
-
-}
-vector<Event> Club_roster::event_list
-{
-
-}
-void Club_roster::Club_roster(string clab_name,string club_description)
+void Club_roster(string clab_name,string club_description)
 {
 
 }

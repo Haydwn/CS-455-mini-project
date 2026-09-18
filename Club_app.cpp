@@ -3,16 +3,8 @@
 #include "Club_app.h"
 using namespace std;
 using namespace club;
+using namespace textui;
 
-//private
-textui::Screen Club_app::text_ui()
-{
-
-}
-Club_roster Club_app::club()
-{
-
-}
 
 void Club_app::execute()
 {
@@ -63,6 +55,7 @@ Club_app::Club_app()
 {
 
 }
+
 void Club_app::run()
 {
 

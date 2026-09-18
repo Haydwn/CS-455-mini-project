@@ -1,9 +1,9 @@
-#include "club_app.h"
+#include "Club_app.h"
 
 int
 main()
 {
-    club::club_app app;
+    club::Club_app app;
 
     app.run();
 
