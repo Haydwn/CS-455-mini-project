@@ -1,4 +1,3 @@
-//Henry A. worked on this.
 #ifndef CLUB_ROSTER_H
 #define CLUB_ROSTER_H
 
