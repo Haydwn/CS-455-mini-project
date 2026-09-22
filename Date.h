@@ -15,6 +15,7 @@ namespace club
 	public:
 		Date(unsigned short year,unsigned short month,unsigned short day);
 		ostream& operator<<(ostream& os, const Date& menu_item);
+		friend ostream& operator<<(ostream& os, const Date& menu_item);
 	};
 }
 

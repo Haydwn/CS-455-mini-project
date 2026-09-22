@@ -14,7 +14,10 @@ namespace club
 		Time time;
 	public:
 		Datetime(Date date,Time time);
-		ostream& operator<<(ostream& os, const Datetime& menu_item);
+
+		ostream &operator<<(ostream &os, const club::Datetime &menu_item);
+
+		friend ostream& operator<<(ostream& os, const Datetime& menu_item);
 	};
 }
 

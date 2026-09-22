@@ -2,6 +2,7 @@
 #define MEMBER_H
 
 #include "Officer.h"
+#include "Date.h"
 #include <string>
 using namespace std;
 
@@ -16,7 +17,7 @@ namespace club
 		Date Joined;
 
 	public:
-		Member (string first,string last,string email,Date joined);
+		Member(string first,string last,string email,Date joined);
 		string get_name() const;
 		string get_first() const;
 		string get_last() const;

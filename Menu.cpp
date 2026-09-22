@@ -4,7 +4,7 @@ using namespace textui;
 
 void Menu::set_title(string title)
 {
-
+	this->title = title;
 }
 string Menu::get_title() const
 {
@@ -12,11 +12,11 @@ string Menu::get_title() const
 }
 void Menu::add_item(char selector,string description)
 {
-
+	Menu_item(selector,description);
 }
 void Menu::add_item(Menu_item item)
 {
-
+	item_list.push_back(item);
 }
 
 // needs to call menu since "using" is in the menu class

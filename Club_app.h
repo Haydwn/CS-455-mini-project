@@ -1,5 +1,3 @@
-//Henry A. worked on this.
-
 #ifndef CLUB_APP_H
 #define CLUB_APP_H
 
@@ -7,6 +5,7 @@
 #include "Screen.h"
 #include <string>
 using namespace std;
+
 
 namespace club
 {

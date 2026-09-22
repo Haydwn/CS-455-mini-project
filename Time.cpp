@@ -1,13 +1,15 @@
 #include "Time.h"
+
+
 using namespace club;
 
-Time::Time(unsigned short hour,unsigned short minute,char am_pm)
+Time::Time(unsigned short hour,unsigned short minute,char am_pm):
+hour(hour),minute(minute),am_pm(am_pm)
 {
-	this->hour = hour;
-	this->minute = minute;
 }
 
-ostream& operator<<(ostream& os, const club::Time& menu_item)
+ostream& Time::operator<<(ostream& os, const Time& menu_item)
 {
-
+	os << menu_item.hour << ':' << menu_item.minute << ':' << menu_item.am_pm;
+	return os;
 }

@@ -2,12 +2,15 @@
 #define OFFICER_H
 
 #include "Officer_role.h"
+#include "Date.h"
+#include "Member.h"
+
 #include <string>
 using namespace std;
 
 namespace club
 {
-	class Officer
+	class Officer : Member
 	{
 	private:
 		enum OFFICER_ROLE role;

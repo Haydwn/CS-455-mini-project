@@ -12,9 +12,13 @@ namespace club
 		unsigned short hour;
 	public:
 		unsigned short minute;
+		char am_pm;
 
 		Time(unsigned short hour,unsigned short minute,char am_pm);
-		ostream& operator<<(ostream& os, const club::Time& menu_item);
+
+		ostream& operator<<(ostream& os, const Time& menu_item);
+
+		friend ostream& operator<<(ostream& os, const Time& menu_item);
 	};
 }
 

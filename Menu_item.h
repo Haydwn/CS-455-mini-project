@@ -14,6 +14,7 @@ namespace textui
 	public:
 		Menu_item(char selector, string description);
 		ostream& operator<<(ostream& os, const Menu_item& menu_item);
+		friend ostream& operator<<(ostream& os, const Menu_item& menu_item);
 	};
 }
 
