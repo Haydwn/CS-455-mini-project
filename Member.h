@@ -1,7 +1,6 @@
 #ifndef MEMBER_H
 #define MEMBER_H
 
-#include "Officer.h"
 #include "Date.h"
 #include <string>
 using namespace std;

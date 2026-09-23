@@ -10,7 +10,7 @@ using namespace std;
 
 namespace club
 {
-	class Officer : Member
+	class Officer : public Member
 	{
 	private:
 		enum OFFICER_ROLE role;
