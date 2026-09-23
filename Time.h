@@ -16,8 +16,6 @@ namespace club
 
 		Time(unsigned short hour,unsigned short minute,char am_pm);
 
-		ostream& operator<<(ostream& os, const Time& menu_item);
-
 		friend ostream& operator<<(ostream& os, const Time& menu_item);
 	};
 }
