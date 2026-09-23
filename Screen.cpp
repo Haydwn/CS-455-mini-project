@@ -7,15 +7,23 @@ using namespace textui;
 Screen::Screen(std::string screen_title, 
 			vector<std::pair<char, std::string>> menu_options)
 {
-
+	Menu.set_title(screen_title);
+	for (auto & option : menu_options) {
+		Menu.add_item(option.first, option.second);
+	}
 }
 
 void Screen::show()
 {
-
+	for (auto &option : Menu) {
+		std::cout << option << std::endl;
+	}
 }
 
 char Screen::get_choice()
 {
-	return 't'; //t for test
+	char choice;
+	std::cout << "pick an option: ";
+	std::cin >> choice;
+	return choice;
 }
