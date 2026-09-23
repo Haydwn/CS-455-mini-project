@@ -18,8 +18,8 @@ namespace club
 
 		//methods
 		void execute();
-		string get_string();
-		enum OFFICER_ROLE get_position();
+		std::string get_string(const string& prompt);
+		OFFICER_ROLE get_position();
 		void add_member();
 		void delete_member();
 		void add_officer();
