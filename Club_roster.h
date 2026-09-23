@@ -27,7 +27,7 @@ namespace club
 		bool insert_officer(Officer officer);
 		bool remove_officer(string email);
 		bool insert_event(Event event);
-		bool remove_event(string name,Date start);
+		bool remove_event(string name, Datetime start);
 		void display_roster() const;
 	};
 
