@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <utility>
 using namespace std;
 
 
@@ -18,7 +19,8 @@ namespace textui
 	private:
 		Menu Menu;
 	public:
-		Screen(string screen_title, vector<char, string> menu_options);
+		Screen(std::string screen_title, 
+			vector<std::pair<char, std::string>> menu_options);
 		void Show();
 		char get_choice();
 	};

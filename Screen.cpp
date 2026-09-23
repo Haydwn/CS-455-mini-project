@@ -4,7 +4,8 @@
 using namespace textui;
 
 
-Screen::Screen(string screen_title, vector<char, string> menu_options)
+Screen::Screen(std::string screen_title, 
+			vector<std::pair<char, std::string>> menu_options)
 {
 
 }
