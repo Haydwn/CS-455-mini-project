@@ -5,9 +5,36 @@
 #include <vector>
 using namespace club;
 
-void Club_app::execute()
+void Club_app::execute(char choice)
 {
-
+    switch (choice) {
+    case '1': 
+        add_member(); 
+        break;
+    case '2': 
+        delete_member(); 
+        break;
+    case '3': 
+        add_officer(); 
+        break;
+    case '4': 
+        delete_officer(); 
+        break;
+    case '5': 
+        add_event(); 
+        break;
+    case '6': 
+        delete_event(); 
+        break;
+    case '7': 
+        display_club(); 
+        break;
+    case 'q':
+    case 'Q':
+        break;
+    default:
+        std::cout << "Error try again" << std::endl;
+    }
 }
 
 std::string Club_app::get_string(const string& prompt)
@@ -199,5 +226,10 @@ Club_app::Club_app():
 
 void Club_app::run()
 {
-    
+    char choice = ' ';
+    while (choice != 'q') {
+        text_ui.show();
+        choice = text_ui.get_choice();
+        execute(choice);
+    }
 }

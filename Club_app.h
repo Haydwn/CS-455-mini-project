@@ -17,7 +17,7 @@ namespace club
 		Club_roster club;
 
 		//methods
-		void execute();
+		void execute(char choice);
 		std::string get_string(const string& prompt);
 		OFFICER_ROLE get_position();
 		void add_member();
