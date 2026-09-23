@@ -9,7 +9,7 @@ Member::Member(string first,string last,string email,Date joined):Joined(joined)
 }
 string Member::get_name() const
 {
-	return First_name + " " + Last_name + " ";
+	return First_name + " " + Last_name;
 }
 string Member::get_first() const
 {
