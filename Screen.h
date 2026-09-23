@@ -21,7 +21,7 @@ namespace textui
 	public:
 		Screen(std::string screen_title, 
 			vector<std::pair<char, std::string>> menu_options);
-		void Show();
+		void show();
 		char get_choice();
 	};
 

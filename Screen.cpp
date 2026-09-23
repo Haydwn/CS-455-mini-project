@@ -9,10 +9,12 @@ Screen::Screen(std::string screen_title,
 {
 
 }
-void Screen::Show()
+
+void Screen::show()
 {
 
 }
+
 char Screen::get_choice()
 {
 	return 't'; //t for test
