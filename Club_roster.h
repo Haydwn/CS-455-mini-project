@@ -1,13 +1,12 @@
 #ifndef CLUB_ROSTER_H
 #define CLUB_ROSTER_H
 
-
-#include "Officer.h"
-#include "Event.h"
-#include "Member.h"
-
 #include <iostream>
 #include <vector>
+#include "Officer.h"
+#include "Event.h"
+
+
 using namespace std;
 
 namespace club
@@ -27,7 +26,7 @@ namespace club
 		bool insert_officer(Officer officer);
 		bool remove_officer(string email);
 		bool insert_event(Event event);
-		bool remove_event(string name, Datetime start);
+		bool remove_event(string name);
 		void display_roster() const;
 	};
 

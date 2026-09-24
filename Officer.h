@@ -2,10 +2,7 @@
 #define OFFICER_H
 
 #include "Officer_role.h"
-#include "Date.h"
 #include "Member.h"
-
-#include <string>
 using namespace std;
 
 namespace club

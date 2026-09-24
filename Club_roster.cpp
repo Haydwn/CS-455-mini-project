@@ -1,5 +1,4 @@
 #include "Club_roster.h"
-#include <vector>
 using namespace club;
 using namespace std;
 
@@ -53,9 +52,15 @@ bool Club_roster::insert_event(Event event)
 
 // need a way to compare start 
 // Changed to Datetime but it is Date in UML
-bool Club_roster::remove_event(string name,Datetime start)
+bool Club_roster::remove_event(string name)
 {
-	return event_list.erase(event_list.begin(), name, start);
+	for (auto it = event_list.begin(); it != event_list.end(); it++) {
+		if (it->get_name() == name) {
+			event_list.erase(it);
+			return true;
+		}
+	}
+	return false;
 }
 
 // we didn't have an operator<< written for member and officer

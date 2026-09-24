@@ -1,6 +1,5 @@
 #include "Officer.h"
 
-#include "Member.h"
 using namespace club;
 
 Officer::Officer(string first,string last,string email,Date joined,
