@@ -31,7 +31,7 @@ void Club_app::execute(char choice)
 {
     switch (choice) {
     case '1': add_member(); break;
-    case '2':  delete_member(); break;
+    case '2': delete_member(); break;
     case '3': add_officer(); break;
     case '4': delete_officer(); break;
     case '5': add_event(); break;
@@ -126,7 +126,7 @@ void Club_app::delete_officer()
 {
     std::string email = 
         get_string("Enter the email of the officer to delete: ");
-    bool didDelete = club.remove_member(email);
+    bool didDelete = club.remove_officer(email);
     if (!didDelete) {
         std::cout << "Problem deleting the officer please try again." 
             << std::endl;
