@@ -21,8 +21,8 @@ void Screen::show()
 
 char Screen::get_choice()
 {
-	char choice;
+	std::string input;
 	std::cout << "pick an option: ";
-	std::cin >> choice;
-	return choice;
+	std::getline(std::cin, input);
+	return input[0];
 }

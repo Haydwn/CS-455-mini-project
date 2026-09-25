@@ -1,20 +1,20 @@
 # simple Makefile example
 
 # create a compiler flags variable
-SRCS=maiun.cpp \
-	 member.cpp \
-	 officer.cpp \
-	 event.cpp \
-	 date.cpp \
-	 time.cpp \
-	 datetime.cpp \
-	 club_roster.cpp \
-	 club_app.cpp \
-	 screen.cpp \
-	 menu.cpp \
-	 menu_item.cpp
+SRCS=main.cpp \
+	 Member.cpp \
+	 Officer.cpp \
+	 Event.cpp \
+	 Date.cpp \
+	 Time.cpp \
+	 Datetime.cpp \
+	 Club_roster.cpp \
+	 Club_app.cpp \
+	 Screen.cpp \
+	 Menu.cpp \
+	 Menu_item.cpp
 OBJS=${SRCS:S/cpp$/o/g}
-PROG=club_app
+PROG=Club_app
 
 CXXFLAGS=-Wall -std=c++23
 
@@ -25,29 +25,29 @@ all: ${PROG}
 ${PROG}: ${OBJS}
 	${CXX} ${CXXFLAGS} -o $@ ${OBJS}
 
-member.o: member.cpp member.h date.h
+Member.o: Member.cpp Member.h Date.h
 
-officer.o: officer.cpp officer.h member.h date.h officer_role.h
+Officer.o: Officer.cpp Officer.h Member.h Date.h Officer_role.h
 
-event.o: event.cpp event.h datetime.h
+Event.o: Event.cpp Event.h Datetime.h
 
-date.o: date.cpp date.h
+Date.o: Date.cpp Date.h
 
-time.o: time.cpp time.h
+Time.o: Time.cpp Time.h
 
-datetime.o: datetime.cpp datetime.h date.h time.h
+Datetime.o: Datetime.cpp Datetime.h Date.h Time.h
 
-club_roster.o: club_roster.cpp club_roster.h member.h officer.h event.h
+Club_roster.o: Club_roster.cpp Club_roster.h Member.h Officer.h Event.h
 
-club_app.o: club_app.cpp club_app.h club_roster.h screen.h officer_role.h
+Club_app.o: Club_app.cpp Club_app.h Club_roster.h Screen.h Officer_role.h
 
-screen.o: screen.cpp screen.h menu.h
+Screen.o: Screen.cpp Screen.h Menu.h
 
-menu.o: menu.cpp menu.h menu_item.h
+Menu.o: Menu.cpp Menu.h Menu_item.h
 
-menu_item.o: menu_item.cpp menu_item.h
+Menu_item.o: Menu_item.cpp Menu_item.h
 
-main.o: main.cpp club_app.h
+main.o: main.cpp Club_app.h
 
 clean:
 	@rm -f ${PROG} ${OBJ}
