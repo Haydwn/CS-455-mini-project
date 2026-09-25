@@ -27,6 +27,14 @@ bool Club_roster::remove_member(std::string email)
 
 bool Club_roster::insert_officer(Officer officer)
 {
+	for (auto offi : officer_list) {
+		if(offi.get_role() == officer.get_role()) {
+			std::cout << "Cannot have 2 officers of the same role"
+				<< std::endl;
+			return false;
+		}
+	}
+	
 	officer_list.push_back(officer);
 	return true;
 }
