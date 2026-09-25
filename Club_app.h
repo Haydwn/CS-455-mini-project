@@ -4,8 +4,6 @@
 #include "Club_roster.h"
 #include "Screen.h"
 #include <string>
-using namespace std;
-
 
 namespace club
 {
@@ -17,8 +15,10 @@ namespace club
 		Club_roster club;
 
 		//methods
+		Date getDate();
+		Time getTime();
 		void execute(char choice);
-		std::string get_string(const string& prompt);
+		std::string get_string(const std::string& prompt);
 		OFFICER_ROLE get_position();
 		void add_member();
 		void delete_member();
@@ -33,6 +33,6 @@ namespace club
 		void run();
 	};
 
-};
+}
 
 #endif
