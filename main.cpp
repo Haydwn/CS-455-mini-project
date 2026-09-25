@@ -1,7 +1,6 @@
 #include "Club_app.h"
 
-int
-main()
+int main()
 {
     club::Club_app app;
 

@@ -1,6 +1,5 @@
-
-//Henry A. worked on this.
 #include "Club_app.h"
+
 #include <iostream>
 
 using namespace club;
@@ -44,11 +43,11 @@ void Club_app::execute(char choice)
     }
 }
 
-std::string Club_app::get_string(const string& prompt)
+std::string Club_app::get_string(const std::string& prompt)
 {
     std::cout << prompt;
-    string input;
-    std::getline(cin, input);
+    std::string input;
+    std::getline(std::cin, input);
     return input;
 }
 
@@ -61,7 +60,7 @@ OFFICER_ROLE Club_app::get_position()
     std::cout << "5. Events Chair" << std::endl;
     std::cout << "6. Internet Chair" << std::endl;
 
-    string choice = get_string("Choose a position: ");
+    std::string choice = get_string("Choose a position: ");
 
     if (choice == "1") return PRESIDENT;
     if (choice == "2") return VICE_PRESIDENT;
@@ -70,7 +69,7 @@ OFFICER_ROLE Club_app::get_position()
     if (choice == "5") return EVENTS_CHAIR;
     if (choice == "6") return INTERNET_CHAIR;
 
-    cout << "Invalid position. Please try again.\n";
+    std::cout << "Invalid position. Please try again.\n";
     return get_position();
 }
 

@@ -5,12 +5,9 @@
 
 #include "Menu.h"
 
-#include <iostream>
 #include <string>
 #include <vector>
 #include <utility>
-using namespace std;
-
 
 namespace textui
 {
@@ -20,7 +17,7 @@ namespace textui
 		Menu Menu;
 	public:
 		Screen(std::string screen_title, 
-			vector<std::pair<char, std::string>> menu_options);
+			std::vector<std::pair<char, std::string>> menu_options);
 		void show();
 		char get_choice();
 	};

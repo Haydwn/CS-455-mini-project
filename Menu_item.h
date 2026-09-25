@@ -2,7 +2,7 @@
 #define MENU_ITEM_H
 
 #include <iostream>
-using namespace std;
+#include <string>
 
 namespace textui
 {
@@ -10,10 +10,11 @@ namespace textui
 	{
 	private:
 		char selector;
-		string description;
+		std::string description;
 	public:
-		Menu_item(char selector, string description);
-		friend ostream& operator<<(ostream& os, const Menu_item& menu_item);
+		Menu_item(char selector, std::string description);
+		friend std::ostream& operator<<(std::ostream& os, 
+			const Menu_item& menu_item);
 	};
 }
 

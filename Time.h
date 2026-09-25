@@ -2,7 +2,6 @@
 #define TIME_H
 
 #include <iostream>
-using namespace std;
 
 namespace club
 {
@@ -16,7 +15,8 @@ namespace club
 
 		Time(unsigned short hour,unsigned short minute,char am_pm);
 
-		friend ostream& operator<<(ostream& os, const Time& menu_item);
+		friend std::ostream& operator<<
+			(std::ostream& os, const Time& menu_item);
 	};
 }
 

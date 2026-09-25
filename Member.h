@@ -2,25 +2,26 @@
 #define MEMBER_H
 
 #include "Date.h"
+
 #include <string>
-using namespace std;
 
 namespace club
 {
 	class Member
 	{
 	protected:
-		string First_name;
-		string Last_name;
-		string Email;
+		std::string First_name;
+		std::string Last_name;
+		std::string Email;
 		Date Joined;
 
 	public:
-		Member(string first,string last,string email,Date Joined);
-		string get_name() const;
-		string get_first() const;
-		string get_last() const;
-		string get_email() const;
+		Member(std::string first, std::string last, std::string email,
+			Date Joined);
+		std::string get_name() const;
+		std::string get_first() const;
+		std::string get_last() const;
+		std::string get_email() const;
 		Date get_joined() const;
 	};
 }

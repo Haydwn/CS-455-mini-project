@@ -1,4 +1,5 @@
 #include "Menu.h"
+
 using namespace textui;
 
 void Menu::set_title(std::string title)
@@ -11,7 +12,7 @@ std::string Menu::get_title() const
 	return title;
 }
 
-void Menu::add_item(char selector,std::string description)
+void Menu::add_item(char selector, std::string description)
 {
 	item_list.push_back(Menu_item(selector,description));
 }

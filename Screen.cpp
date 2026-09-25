@@ -1,11 +1,10 @@
-//Henry A. worked on this.
-
 #include "Screen.h"
+
+#include <iostream>
 using namespace textui;
 
-
 Screen::Screen(std::string screen_title, 
-			vector<std::pair<char, std::string>> menu_options)
+	std::vector<std::pair<char, std::string>> menu_options)
 {
 	Menu.set_title(screen_title);
 	for (const auto& option : menu_options) {

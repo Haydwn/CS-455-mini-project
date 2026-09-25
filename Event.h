@@ -2,28 +2,27 @@
 #define EVENT_H
 
 #include "Datetime.h"
-#include <iostream>
+
 #include <string>
-using namespace std;
 
 namespace club
 {
 	class Event
 	{
 	private:
-		string name;
-		string description;
+		std::string name;
+		std::string description;
 		Datetime start;
 		Datetime end;
-		string location;
+		std::string location;
 	public:
-		Event(string name,string description,Datetime start,Datetime end,
-														string location);
-		string get_name() const;
-		string get_description() const;
+		Event(std::string name, std::string description, Datetime start,
+			Datetime end, std::string location);
+		std::string get_name() const;
+		std::string get_description() const;
 		Datetime get_start() const;
 		Datetime get_end() const;
-		string get_location() const;
+		std::string get_location() const;
 	};
 }
 

@@ -3,7 +3,6 @@
 
 #include "Date.h"
 #include "Time.h"
-using namespace std;
 
 namespace club
 {
@@ -13,9 +12,10 @@ namespace club
 		Date date;
 		Time time;
 	public:
-		Datetime(Date date,Time time);
+		Datetime(Date date, Time time);
 
-		friend ostream& operator<<(ostream& os, const Datetime& menu_item);
+		friend std::ostream& operator<<
+			(std::ostream& os, const Datetime& menu_item);
 	};
 }
 

@@ -2,7 +2,6 @@
 #define DATE_H
 
 #include <iostream>
-using namespace std;
 
 namespace club
 {
@@ -13,8 +12,9 @@ namespace club
 		unsigned short month;
 		unsigned short day;
 	public:
-		Date(unsigned short year,unsigned short month,unsigned short day);
-		friend ostream& operator<<(ostream& os, const Date& menu_item);
+		Date(unsigned short year, unsigned short month, unsigned short day);
+		friend std::ostream& operator<<
+			(std::ostream& os, const Date& menu_item);
 	};
 }
 
