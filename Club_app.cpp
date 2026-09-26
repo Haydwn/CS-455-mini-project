@@ -192,5 +192,6 @@ void Club_app::run()
         choice = text_ui.get_choice();
         std::cout << std::endl;
         execute(choice);
+        std::cout << std::endl;
     }
 }
